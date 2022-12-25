@@ -36,7 +36,7 @@ int main() {
 	catch (Error& err) {
 
 		std::cerr << err.what() << std::endl << std::endl;
-		delete f;
+	
 	}
 	figure* t = new triange;
 	try {
@@ -46,7 +46,7 @@ int main() {
 	catch (Error& err) {
 		std::cerr << "Не был создан.";
 		std::cerr << err.what() << std::endl << std::endl;
-		delete t;
+	
 	}
 	figure* r_t = new rt_triange;
 
@@ -57,7 +57,7 @@ int main() {
 	catch (Error& err) {
 		std::cerr << "Не был создан.";
 		std::cerr << err.what() << std::endl << std::endl;
-		delete r_t;
+	
 	}
 	figure* rvb_t = new rbd_triange;
 	
@@ -68,7 +68,7 @@ int main() {
 	catch (Error& err) {
 		std::cerr << "Не был создан.";
 		std::cerr << err.what() << std::endl << std::endl;
-		delete rvb_t;
+		
 	}
 	figure* rvst_ = new rvst_triange;
 
@@ -79,7 +79,7 @@ int main() {
 	catch (Error& err) {
 		std::cerr << "Не был создан.";
 		std::cerr << err.what() << std::endl << std::endl;
-		delete rvst_;
+	
 	}
 
 	
@@ -92,7 +92,7 @@ int main() {
 	catch (Error& err) {
 		std::cerr << "Не был создан.";
 		std::cerr << err.what() << std::endl << std::endl;
-		delete q;
+	
 	}
 	figure* q_pr = new prm_quadre;
 
@@ -103,7 +103,7 @@ int main() {
 	catch (Error& err) {
 		std::cerr << "Не был создан.";
 		std::cerr << err.what() << std::endl << std::endl;
-		delete q_pr;
+	
 	}
 	figure* q_kv = new quadr;
 	
@@ -114,7 +114,7 @@ int main() {
 	catch (Error& err) {
 		std::cerr << "Не был создан.";
 		std::cerr << err.what() << std::endl << std::endl;
-		delete q_kv;
+	
 	}
 	figure* q_r = new romb;
 
@@ -125,7 +125,7 @@ int main() {
 	catch (Error& err) {
 		std::cerr << "Не был создан.";
 		std::cerr << err.what() << std::endl << std::endl;
-		delete q_r;
+		
 	}
 	figure* q_pa = new parallelogram;
 	
@@ -136,7 +136,7 @@ int main() {
 	catch (Error& err) {
 		std::cerr << "Не был создан.";
 		std::cerr << err.what() << std::endl << std::endl;
-		delete q_pa;
+		
 	}
 
 

@@ -17,12 +17,12 @@ int main()
 			std::cout << "Введите слово: ";
 			std::cin >> word;
 			size = word.length();
-			if (size == bad_length) throw bad_length;
+			if (size == bad_length) throw "Вы ввели слово запретной длины!До свидания!";
 			std::cout << "Длинна слова '" << word << "' равна " << word.length() << std::endl;
 
 		}
-		catch (int a) {
-			std::cerr << "Вы ввели слово запретной длины!До свидания";
+		catch (const char* a) {
+			std::cerr << a;
 		}
 	} while (size != bad_length);
 }
